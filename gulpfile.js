@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create();
 const plumber = require('gulp-plumber');
 
 const paths = {
-    root: './build/**/*.*',
+    root: './build/',
     templates: {
         pages: './src/views/pages/*.pug',
         src: './src/views/**/*.pug',
@@ -56,13 +56,14 @@ function server(){
 function clean(){
     return del(paths.root);
 }
-//pug
+pug
 function templates(){
     return gulp.src(paths.templates.pages)
         .pipe(plumber())
         .pipe(pug({pretty:true}))
         .pipe(gulp.dest(paths.root));
 }
+
 //scss
 function styles(){
     return gulp.src(paths.styles.main)
@@ -91,12 +92,13 @@ function fonts() {
         .pipe(gulp.dest(paths.fonts.dest));
 }
 
-exports.templates = templates;
+
 exports.styles = styles;
 exports.clean = clean;
 exports.scripts = scripts;
 exports.images = images;
 exports.fonts = fonts;
+exports.templates = templates;
 
 gulp.task('default', gulp.series(
     clean,
