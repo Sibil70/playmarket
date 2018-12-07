@@ -3,10 +3,12 @@ extends ../main.layout.pug
 block variables
     - var title = "Главная"
 block content
-    h1 "Main page"
-    p.italic gotham italic
-    p.lightitalic gotham light italic
-    p.bold gotham bold
+    include ../common/header.pug
+    .banner
+        img.banner__image(src="../../assets/images/banner.png", alt="баннер")
+    .maincontent
+        .features
+        .news
 
 block scripts
     script(src='main.bundle.js')

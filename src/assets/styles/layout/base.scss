@@ -1,39 +1,27 @@
 
 body, html {
+    width: 100%;
     height: 100%;
+    padding: 0;
+    margin: 0;
 
 }
 
 body{
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
+    box-sizing: border-box;
     line-height: 1.42;
     color: $text-color;
 }
-.italic {
-    font-family: 'Gotham';
-    font-weight: 300;
-    font-style: normal;
-}
-.lightitalic {
-    font-family: 'Gotham';
-    font-weight: 300;
-    font-style: italic;
-}
-.bold {
-    font-family: 'Gotham';
-    font-weight: 700;
-    font-style: bold;
-}
 
 .wrapper{
-overflow: hidden;
-min-height: 100%;
-position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
 
 }
-.container{
-    margin: 0 auto;
-    width: 95%;
-};
+.maincontent{
+    display: flex;
+    flex-direction: column;
+}
