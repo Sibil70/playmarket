@@ -1,0 +1,15 @@
+.button{
+    position:absolute;
+    background: url("../images/btn.png") center center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: none;
+    width:300px;
+    height:140px;
+    padding:0;
+    display: none;
+}
+.offer{
+    font-family: 'centurygothic';
+    font-size: 50px;
+}

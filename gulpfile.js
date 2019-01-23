@@ -13,7 +13,7 @@ const plumber = require('gulp-plumber');
 const paths = {
     root: './build/',
     templates: {
-        pages: './src/views/pages/*.pug',
+        pages: './src/views/*.pug',
         src: './src/views/**/*.pug',
         dest: './build/'
     },
@@ -56,7 +56,7 @@ function server(){
 function clean(){
     return del(paths.root);
 }
-pug
+// pug
 function templates(){
     return gulp.src(paths.templates.pages)
         .pipe(plumber())
@@ -92,6 +92,11 @@ function fonts() {
         .pipe(gulp.dest(paths.fonts.dest));
 }
 
+gulp.task('default', gulp.series(
+    clean,
+    gulp.parallel(styles, templates, scripts, images, fonts),
+    gulp.parallel(watch, server)
+));
 
 exports.styles = styles;
 exports.clean = clean;
@@ -100,8 +105,4 @@ exports.images = images;
 exports.fonts = fonts;
 exports.templates = templates;
 
-gulp.task('default', gulp.series(
-    clean,
-    gulp.parallel(styles, templates, scripts, images, fonts),
-    gulp.parallel(watch, server)
-));
+
