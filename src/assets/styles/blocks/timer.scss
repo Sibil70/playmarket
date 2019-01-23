@@ -1,0 +1,23 @@
+.timer {
+    position:absolute;
+    background: url('../images/bg/timer_bg.svg') center center no-repeat;
+    background-clip: content-box;
+    width:900px;
+    height:421px;
+    padding:0;
+    top: 60%;
+    left: 36.6%;
+    font-family: 'compact';
+    font-size: 45px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+.text{
+    font-size: 94px;
+    text-align: center;
+    // -moz-transform: matrix( 0.34724655053144,0,0,0.34558208754499,0,0);
+    // -webkit-transform: matrix( 0.34724655053144,0,0,0.34558208754499,0,0);
+    // -ms-transform: matrix( 0.34724655053144,0,0,0.34558208754499,0,0);
+  }

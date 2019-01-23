@@ -18,7 +18,7 @@ body{
     overflow: hidden;
     min-height: 100%;
     position: relative;
-    background: url(../images/bg/bg-orange.png) center center no-repeat fixed, url(../images/bg/bg-blue.png)center center no-repeat fixed;
+    background: url(../images/bg/bg-orange.png) center center no-repeat, url(../images/bg/bg-blue.png)center center no-repeat;
     background-size: cover;
 
 }
@@ -26,6 +26,10 @@ body{
     width: 1660px;
     height: 100vh;
     margin: 0 auto;
-    background: url(../images/banner.png) center center no-repeat fixed, url(../images/banner2.png) 47% 47% no-repeat fixed;
-    position: relative;
+    background: url(../images/bg/circle_bg.svg) 50% 50% no-repeat;
+    background: url(../images/bg/circle.svg) 50% 50% no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

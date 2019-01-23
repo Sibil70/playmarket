@@ -20,32 +20,4 @@
     font-family: 'lemonmilk';
     src: url('../fonts/lemonMilk.woff2') format('woff2'),
          url('../fonts/lemonMilk.woff') format('woff');
-    // font-weight: 300;
-    // font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/GothamPro-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: bold;
-}
-@font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/GothamPro-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/GothamPro-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
 }
