@@ -1,0 +1,28 @@
+.content{
+    position: relative;
+    top: 51.5%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+    width: 1440px;
+    height: 1140px;
+    display: flex;
+    flex-direction: column; 
+}
+.content__top{
+    position: absolute;
+    top: -4%;
+    left: 6%;
+    z-index: 2;
+}
+.content__center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.content__bottom{
+    position:absolute;
+    top: 67%;
+    left: 31%;
+}

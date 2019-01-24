@@ -1,0 +1,25 @@
+.offer{
+    background: url('../images/bg/offer_bg.svg') center center no-repeat;
+    background-size: cover;
+    height: 720px;
+    width: 1465px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.offer__text{
+    font-family: 'centurygothic';
+    font-size: 130.4px;
+    font-weight: bold;
+    line-height: 0.968;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-right: 70px;
+    &--red{
+        color:#d7180d;
+    }
+    &--green{
+        color:#015204;
+    }
+}

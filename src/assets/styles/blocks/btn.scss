@@ -1,48 +1,17 @@
 .button{
-    position:absolute;
-    background: url('../images/bg/button_bg.svg') center center no-repeat;
-    background-clip: content-box;
+    background: url('../images/bg/button_bg.svg') 0% 100% no-repeat;
     border: none;
-    width:900px;
-    height:421px;
+    width:909px;
+    height:420px;
     padding:0;
-    top: 18.5%;
-    left: 12.6%;
     font-family: 'lemonmilk';
-    font-size: 142px;
+    font-size: 141px;
     color: #fff;
     cursor: pointer;
-    &:active {
-        width:900px;
-        height:400px;
+    &:focus{
+        outline:none;
     }
 }
-.offer{
-    background: url('../images/bg/offer_bg.svg') center center no-repeat;
-    background-size: cover;
-    background-clip: content-box;
-    height: 695px;
-    width: 1385px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
 
-}
-.span{
-    font-family: 'centurygothic';
-    font-size: 94px;
-    font-weight: bold;
-    line-height: 0.968;
-    text-align: center;
-    -moz-transform: matrix( 1.38559300393561,0,0,1.38647284944284,0,0);
-    -webkit-transform: matrix( 1.38559300393561,0,0,1.38647284944284,0,0);
-    -ms-transform: matrix( 1.38559300393561,0,0,1.38647284944284,0,0);
-    width: 1230px;
-}
 
   

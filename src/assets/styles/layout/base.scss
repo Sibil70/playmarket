@@ -23,13 +23,8 @@ body{
 
 }
 .container{
-    width: 1660px;
+    width: 1668px;
     height: 100vh;
     margin: 0 auto;
-    background: url(../images/bg/circle_bg.svg) 50% 50% no-repeat;
-    background: url(../images/bg/circle.svg) 50% 50% no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: url(../images/bg/circle.png) 50% 50% no-repeat;
 }
