@@ -23,7 +23,7 @@ const paths = {
         dest: './build/assets/styles'
     },
     scripts: {
-        src: './src/assets/scripts/*.js',
+        src: './src/assets/scripts/**/*.js',
         dest: './build/assets/scripts/'
     },
     images: {
@@ -50,7 +50,6 @@ function server(){
     });
     browserSync.watch(paths.root + `**/*.*`, browserSync.reload);
 }
-
 
 //очистка
 function clean(){

@@ -19,8 +19,8 @@ body{
     min-height: 100%;
     position: relative;
     background: url(../images/bg/bg-orange.png) center center no-repeat, url(../images/bg/bg-blue.png) center center no-repeat;
-    background-size: cover;
-    background-blend-mode: hard-light, normal;
+    background-size: 100% 97%, cover;
+    background-blend-mode: normal, multiply;
 }
 .container{
     width: 830px;

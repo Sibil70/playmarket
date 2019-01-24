@@ -26,3 +26,13 @@
     top: 67%;
     left: 31%;
 }
+.registration{
+    height:0px;
+    border:transparent;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 300px;
+    transition: height 0.3s ease-out;
+}
