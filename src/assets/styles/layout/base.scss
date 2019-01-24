@@ -18,13 +18,14 @@ body{
     overflow: hidden;
     min-height: 100%;
     position: relative;
-    background: url(../images/bg/bg-orange.png) center center no-repeat, url(../images/bg/bg-blue.png)center center no-repeat;
+    background: url(../images/bg/bg-orange.png) center center no-repeat, url(../images/bg/bg-blue.png) center center no-repeat;
     background-size: cover;
-
+    background-blend-mode: hard-light, normal;
 }
 .container{
-    width: 1668px;
+    width: 830px;
     height: 100vh;
     margin: 0 auto;
-    background: url(../images/bg/circle.png) 50% 50% no-repeat;
+    background: url(../images/bg/circle.png) 50% 50.5% no-repeat;
+    background-size: contain;
 }
