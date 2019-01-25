@@ -5,14 +5,34 @@
     transform: translate(-50%, -50%);
     width: 720px;
     height: 570px;
-    display: flex;
-    flex-direction: column; 
+    @include widescreen {
+        width: 1440px;
+        height: 1040px;
+        top: 49%;
+        left: 52%;
+    }
+    @include tablets {
+        width: 500px;
+        height: 396px;
+    }
+    @include phones {
+        width: 258px;
+        height: 200px;
+    }
 }
 .content__top{
     position: absolute;
     top: -4%;
     left: 6%;
     z-index: 2;
+    @include tablets {
+        top: -1%;
+        left: 6.2%;
+    }
+    @include phones {
+        top: -3%;
+        left: 6.7%;
+    }
 }
 .content__center{
     position: absolute;
@@ -20,11 +40,35 @@
     left:50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    @include widescreen {
+        top: 54.5%;
+        left: 51%;
+    }
+    @include tablets {
+        top: 51%;
+        left: 50%;
+    }
+    @include phones {
+        top: 50%;
+        left: 50.5%;
+    }
 }
 .content__bottom{
     position:absolute;
     top: 67%;
     left: 31%;
+    @include widescreen {
+        top: 73.5%;
+        left: 31.5%;
+    }
+    @include tablets {
+        top: 67%;
+        left: 32%;
+    }
+    @include phones {
+        top: 68%;
+        left: 26%;
+    }
 }
 .registration{
     height:0px;
@@ -35,4 +79,9 @@
     transform:translate(-50%,-50%);
     width: 300px;
     transition: height 0.3s ease-out;
+    @include widescreen {
+        transform:scale(3);
+        top: 40%;
+        left: 40%;
+    }
 }

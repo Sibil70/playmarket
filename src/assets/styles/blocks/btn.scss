@@ -16,6 +16,25 @@
     &:active{
         transform:scale(0.95)
     }
+
+    @include widescreen {
+        width:910px;
+        height:420px;
+        font-size: 70px;
+    }
+    @include tablets {
+        width: 311px;
+        height: 135px;
+        font-size: 48px;
+        padding-bottom: 10px;
+    }
+    @include phones {
+        width: 161px;
+        height: 70px;
+        font-size: 25px;
+        padding-bottom: 5px;
+        padding-right: 3px;
+    }
 }
 
 

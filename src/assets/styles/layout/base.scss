@@ -19,8 +19,8 @@ body{
     min-height: 100%;
     position: relative;
     background: url(../images/bg/bg-orange.png) center center no-repeat, url(../images/bg/bg-blue.png) center center no-repeat;
-    background-size: 100% 97%, cover;
-    background-blend-mode: normal, multiply;
+    background-size: 100% 100%, cover;
+    background-blend-mode: normal;
 }
 .container{
     width: 830px;
@@ -28,4 +28,14 @@ body{
     margin: 0 auto;
     background: url(../images/bg/circle.png) 50% 50.5% no-repeat;
     background-size: contain;
+   
+    @include widescreen {
+        width: 1660px;
+    }
+    @include tablets {
+        width:580px;
+    }
+    @include phones {
+        width: 300px;
+    }
 }
