@@ -75,17 +75,33 @@
 
 }
 .registration{
-    height:0px;
-    border:transparent;
+    display: none;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width: 300px;
-    transition: height 0.3s ease-out;
-    @include widescreen {
-        transform:scale(3);
-        top: 40%;
-        left: 40%;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+
+    &__frame {
+        border:transparent;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        &::before {
+            content: "✖";
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+            top: 30.9%;
+            left: 61%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+            cursor:pointer;
+        }
     }
 }
