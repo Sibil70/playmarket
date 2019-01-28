@@ -1,7 +1,9 @@
 function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
+    var timer = duration,
+        minutes,
+        seconds;
+    setInterval(function() {
+        minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -15,8 +17,8 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
-window.onload = function () {
+window.onload = function() {
     var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
+        display = document.querySelector("#time");
     startTimer(fiveMinutes, display);
 };

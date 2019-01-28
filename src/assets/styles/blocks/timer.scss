@@ -1,18 +1,16 @@
 .timer {
-
     background: url('../images/bg/timer_bg.svg') center center no-repeat;
     background-clip: content-box;
-    width:450px;
-    height:210px;
+    width: 450px;
+    height: 210px;
     font-family: 'compact';
     font-size: 16px;
     color: #fff;
     display: flex;
     flex-direction: column;
-
     @include widescreen {
-        width:900px;
-        height:420px;
+        width: 900px;
+        height: 420px;
         font-size: 32px;
     }
     @include tablets {
@@ -25,13 +23,11 @@
         height: 75px;
         font-size: 6.5px;
     }
-
-
 }
-.timer__top{
+
+.timer__top {
     margin-top: 62px;
     margin-left: 43px;
-    
     @include widescreen {
         margin-top: 124px;
         margin-left: 79px;
@@ -44,10 +40,9 @@
         margin-top: 22px;
         margin-left: 29px;
     }
-
 }
 
-.timer__center{
+.timer__center {
     text-align: center;
     font-family: 'lemonmilk';
     font-size: 55px;
@@ -71,9 +66,9 @@
         word-spacing: -.1rem;
         margin-right: 5px;
     }
-
 }
-.timer__bottom{
+
+.timer__bottom {
     text-align: right;
     margin-right: 53px;
     @include widescreen {
@@ -85,6 +80,4 @@
     @include phones {
         margin-right: 32px;
     }
-
 }
-  
